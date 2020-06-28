@@ -302,7 +302,7 @@ matrix_nginx_proxy_proxy_matrix_client_api_addr_with_container: "matrix-nginx-pr
 matrix_nginx_proxy_proxy_matrix_client_api_addr_sans_container: "127.0.0.1:12080"
 
 # This needs to be equal or higher than the maximum upload size accepted by Synapse.
-matrix_nginx_proxy_proxy_matrix_client_api_client_max_body_size_mb: 50
+matrix_nginx_proxy_proxy_matrix_client_api_client_max_body_size_mb: 100
 
 
 # Tells whether `/_synapse/client` is forwarded to the Matrix Client API server.
