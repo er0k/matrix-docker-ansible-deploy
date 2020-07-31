@@ -119,7 +119,7 @@ matrix_nginx_proxy_base_domain_homepage_template: |-
 matrix_nginx_proxy_access_log_enabled: true
 
 # Controls whether proxying the riot domain should be done.
-matrix_nginx_proxy_proxy_riot_compat_redirect_enabled: false
+matrix_nginx_proxy_proxy_riot_compat_redirect_enabled: true
 matrix_nginx_proxy_proxy_riot_compat_redirect_hostname: "riot.{{ matrix_domain }}"
 
 # Controls whether proxying for Synapse should be done.
