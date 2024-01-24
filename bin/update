@@ -1,0 +1,4 @@
+#!/bin/bash
+make roles && \
+sudo ANSIBLE_NOCOWS=1 ansible-playbook -i inventory/hosts setup.yml --tags=setup-all,ensure-matrix-users-created,start && \
+sudo ANSIBLE_NOCOWS=1 ansible-playbook -i inventory/hosts setup.yml --tags=self-check,run-docker-prune
